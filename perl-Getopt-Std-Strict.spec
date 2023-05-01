@@ -7,7 +7,7 @@
 Summary:	Getopt::Std::Strict
 Name:		perl-Getopt-Std-Strict
 Version:	1.01
-Release:	1
+Release:	2
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Getopt/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -46,5 +46,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%dir %{perl_vendorlib}/Getopt/Std
 %{perl_vendorlib}/Getopt/Std/Strict.pm
 %{_mandir}/man3/Getopt::Std::Strict.3*
